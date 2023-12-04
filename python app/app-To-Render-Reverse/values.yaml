@@ -1,0 +1,12 @@
+replicaCount: 1
+appName: app-to-render-reversed-json
+serviceName: service-to-expose-reversed-json
+image:
+  repository: docker.io/anishihsag/flask-application
+  tag: image-to-expose-reversed-json
+  containerPort: 5001
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 5002
+
